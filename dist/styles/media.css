@@ -1,0 +1,25 @@
+/*? EDIT SOME STYLES FOR NOT XS SCREEN SIZES */
+@media (min-width: 375px) {
+    .top-heading {
+        display: block;
+    }
+}
+
+/*? EDIT SOME STYLES FOR TABLET SCREEN SIZES */
+@media (min-width: 768px) {
+    .top-heading::after {
+        content: url(../images/light-theme-logo.png);
+        position: absolute;
+        top: .3rem;
+        right: -3.7rem;
+    }
+
+    .dark-mode .top-heading::after {
+        content: url(../images/dark-theme-logo.png);
+    }
+}
+
+/*? EDIT SOME STYLES FOR DESKTOP SCREEN SIZES */
+@media (min-width: 1440px) {
+
+}
