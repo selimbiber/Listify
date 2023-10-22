@@ -34,7 +34,7 @@
     (SET DARK MODE COLORS)
 } */
 
-#page-container, .header-section, .main-section, .sidebar-menu-subsection, .sidebar-menu-subsection header, .tasks-inbox-heading, .custom-tasks-heading, .repetitive-tasks-heading, .tasks-list, .tasks-list-item, .li-left-side, .li-right-side, .task-info-box, .task-info-box header, .task-info-box p, .task-info-box footer, .menu-buttons-container, .task-creation-form, .task-creation-form .sub-fieldset, .main-fieldset label, .sub-fieldset label, .tasks-area-subsection, .area, .priority-matrix.area .list, .priority-matrix.area .medium-priority-tasks, .tasks-inbox.area header, .task-update-form .main-fieldset, .task-update-form .main-fieldset .sub-fieldset, .empty-tasks-area-message-box, .warning-message-box, .warning-message-box header, .warning-message-box footer, .error-message-box .footer-section {
+#page-container, .header-section, .main-section, .sidebar-menu-subsection, .sidebar-menu-subsection header, .tasks-inbox-heading, .custom-tasks-heading, .repetitive-tasks-heading, .tasks-list, .tasks-list-item, .li-left-side, .li-right-side, .task-info-box, .task-info-box header, .task-info-box p, .task-info-box footer, .menu-buttons-container, .task-creation-form, .task-creation-form .sub-fieldset, .main-fieldset label, .sub-fieldset label, .tasks-area-subsection, .area, .priority-matrix.area .list, .priority-matrix.area .medium-priority-tasks, .tasks-inbox.area header, .task-update-form .main-fieldset, .task-update-form .main-fieldset .sub-fieldset, .empty-tasks-area-message-box, .warning-message-box, .warning-message-box header, .warning-message-box footer, .error-message-box, .footer-section {
     display: flex;
 }
 
