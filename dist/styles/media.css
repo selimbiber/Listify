@@ -1,25 +1,60 @@
 /*? EDIT SOME STYLES FOR NOT XS SCREEN SIZES */
-@media (min-width: 375px) {
-    .top-heading {
-        display: block;
+@media (max-width: 375px) {
+    .header-section {
+        .top-heading {
+            display: none;
+        }
+    }
+
+    .main-section {
+        .tasks-list {
+
+            .tasks-list-item {
+                flex-direction: column;
+                height: 7.3rem;
+                padding: 1rem;
+
+                .li-left-side {
+                    align-self: flex-start;
+                }
+
+                .li-right-side {
+                    align-self: flex-end;
+                }
+            }
+        }
+    }
+
+    .footer-section {
+        a:first-of-type, a:last-of-type {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .priority-matrix.area {
+        display: flex;
+        flex-direction: column;
+        
+        /*todo fix this overlapping box problem */
+        & .medium-priority-tasks {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
 
 /*? EDIT SOME STYLES FOR TABLET SCREEN SIZES */
 @media (min-width: 768px) {
     .top-heading::after {
-        content: url(../images/light-theme-logo.png);
+        content: url(../images/logo_light-theme.png);
         position: absolute;
         top: .3rem;
         right: -3.7rem;
     }
 
     .dark-mode .top-heading::after {
-        content: url(../images/dark-theme-logo.png);
+        content: url(../images/logo_dark-theme.png);
     }
-}
-
-/*? EDIT SOME STYLES FOR DESKTOP SCREEN SIZES */
-@media (min-width: 1440px) {
-
 }
