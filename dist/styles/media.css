@@ -1,4 +1,6 @@
-/*? EDIT SOME STYLES FOR NOT XS SCREEN SIZES */
+/*! EDIT SOME STYLES FOR DIFFERENT SCREEN SIZES */
+
+/*? XS SCREEN SIZES */
 @media (max-width: 375px) {
     .header-section {
         .top-heading {
@@ -7,20 +9,17 @@
     }
 
     .main-section {
-        .tasks-list {
+        .tasks-list  > .tasks-list-item {
+            flex-direction: column;
+            height: 7.3rem;
+            padding: 1rem;
 
-            .tasks-list-item {
-                flex-direction: column;
-                height: 7.3rem;
-                padding: 1rem;
+            .li-left-side {
+                align-self: flex-start;
+            }
 
-                .li-left-side {
-                    align-self: flex-start;
-                }
-
-                .li-right-side {
-                    align-self: flex-end;
-                }
+            .li-right-side {
+                align-self: flex-end;
             }
         }
     }
@@ -32,29 +31,37 @@
     }
 }
 
+/*? MOBILE SCREEN SIZES */
 @media (max-width: 768px) {
-    .priority-matrix.area {
-        display: flex;
+    .medium-priority-tasks {
         flex-direction: column;
-        
-        /*todo fix this overlapping box problem */
-        & .medium-priority-tasks {
-            flex-direction: column;
-            align-items: center;
+        align-items: center;
+        margin: 1rem 0 18rem;
+
+        & > .box {
+            margin-bottom: 1rem; 
         }
     }
 }
 
-/*? EDIT SOME STYLES FOR TABLET SCREEN SIZES */
+/*? TABLET SCREEN SIZES */
 @media (min-width: 768px) {
     .top-heading::after {
-        content: url(../images/logo_light-theme.png);
+        content: url(./images/logo_light-theme.png);
         position: absolute;
         top: .3rem;
         right: -3.7rem;
     }
 
     .dark-mode .top-heading::after {
-        content: url(../images/logo_dark-theme.png);
+        content: url(./images/logo_dark-theme.png);
+    }
+}
+
+/*? MEDIUM SCREEN SIZES */
+@media (min-width: 992px) {
+    .medium-priority-tasks {
+        background: transparent url('data:image/svg+xml,<svg width="64" height="64" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.576 1.424a.6.6 0 0 1 .848 0l10.152 10.152a.6.6 0 0 1 0 .848L12.424 22.576a.6.6 0 0 1-.848 0L1.424 12.424a.6.6 0 0 1 0-.848L11.576 1.424ZM6 12h4m4 0h4"/></svg>') no-repeat center;
+        background-size: 12rem;
     }
 }

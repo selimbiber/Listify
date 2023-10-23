@@ -21,18 +21,88 @@
     --dark-mode-text-color: #F5F5F5;
     --dark-mode-menu-icon-color: #F5F5F5;
     --dark-mode-box-shadow-color: #D3D3D3;
-    --dark-mode-default-border-color: #F5F5F5;
+    --dark-mode-default-border-color: #31363e;
 
-    --dark-mode-primary-bg-color: #31363e;
-    --dark-mode-secondary-bg-color: ;
-    --dark-mode-tertiary-bg-color: ;
+    --dark-mode-primary-bg-color: #76D4FF40;
+    --dark-mode-secondary-bg-color: #E9B82460;
+    --dark-mode-tertiary-bg-color: #D3D3D3;
 
     --animation-curve: cubic-bezier(1, 0, 0, 1);
 }
 
-/*todo .dark-mode {
-    (SET DARK MODE COLORS)
-} */
+.dark-mode {
+    .header-section {
+        background-color: var(--dark-mode-primary-bg-color);
+        border-color: var(--dark-mode-default-border-color);
+    }
+    .main-section {
+        .sidebar-menu-subsection {
+            background-color: var(--dark-mode-primary-bg-color);
+            border-color: var(--dark-mode-default-border-color);
+
+            & .task-creation-form {
+                background-color: #31363e;
+                color: var(--dark-mode-text-color);
+
+                & input, textarea {
+                    color: var(--dark-mode-text-color);
+                }
+            }
+
+            & .task-update-form {
+                background-color: var(--dark-mode-tertiary-bg-color);
+            }
+
+            & .task-info-box {
+                background-color: var(--dark-mode-tertiary-bg-color);
+            }
+
+            & .warning-message-box {
+                background-color: var(--dark-mode-tertiary-bg-color);
+            }
+
+            & .error-message-box {
+                button {
+                    background-color: var(--dark-mode-tertiary-bg-color);
+                }
+            }
+        }
+        .tasks-area-subsection {
+            background-color: var(--dark-mode-secondary-bg-color);
+
+            & .priority-matrix.area {
+
+                & .container, & .box {
+                    .header {
+                        background-color: #a1a19d;
+                    }
+                }
+            }
+
+            & .task-update-form {
+                background-color: var(--dark-mode-tertiary-bg-color);
+            }
+
+            & .task-info-box {
+                background-color: var(--dark-mode-tertiary-bg-color);
+            }
+
+            & .warning-message-box {
+                background-color: var(--dark-mode-tertiary-bg-color);
+            }
+
+            & .error-message-box {
+                button {
+                    background-color: var(--dark-mode-tertiary-bg-color);
+                }
+            }
+        }
+    }
+    .footer-section {
+        background-color: var(--dark-mode-primary-bg-color);
+        border-color: var(--dark-mode-default-border-color);
+    }
+}
 
 #page-container, .header-section, .main-section, .sidebar-menu-subsection, .sidebar-menu-subsection header, .tasks-inbox-heading, .custom-tasks-heading, .repetitive-tasks-heading, .tasks-list, .tasks-list-item, .li-left-side, .li-right-side, .task-info-box, .task-info-box header, .task-info-box p, .task-info-box footer, .menu-buttons-container, .task-creation-form, .task-creation-form .sub-fieldset, .main-fieldset label, .sub-fieldset label, .tasks-area-subsection, .area, .priority-matrix.area .list, .priority-matrix.area .medium-priority-tasks, .tasks-inbox.area header, .task-update-form .main-fieldset, .task-update-form .main-fieldset .sub-fieldset, .empty-tasks-area-message-box, .warning-message-box, .warning-message-box header, .warning-message-box footer, .error-message-box, .footer-section {
     display: flex;
@@ -97,66 +167,68 @@
     height: 8rem;
 
     /*? Menu Toggle Button Styles Code Base -> https://codepen.io/angeladelise/pen/NWGWmPZ */
-    .sidebar-slider label {
-        width: 3rem;
-        height: .36rem;
-        background-color: var(--primary-theme-color);
-        position: absolute;
-        cursor: pointer;
-
-        &::before,
-        &::after {
-            content: "";
+    .sidebar-slider {
+        & .toggle-menu_checkbox-btn {
+            display: none;
+    
+            & ~ label {
+                transition: all 0.2s var(--animation-curve);
+            }
+    
+            &:checked ~ label {
+                background-color: transparent;
+    
+                &::before,
+                &::after {
+                    content: "";
+                    border: none;
+                    height: .3rem;
+                    background-color: var(--tertiary-theme-color);
+                    left: 10%;
+                }
+    
+                &::before {
+                    transform: rotateZ(41deg);
+                }
+    
+                &::after {
+                    transform: rotateZ(-41deg);
+                }
+            }
+        }
+    
+        & label {
             width: 3rem;
-            background-color: var(--light-mode-primary-bg-color);
+            height: .36rem;
+            background-color: var(--primary-theme-color);
             position: absolute;
-            display: block;
-            color: var(--tertiary-theme-color);
-            transition: all 0.2s var(--animation-curve);
-        }
-        &::before {
-            top: -250%;
-            left: 0%;
-            height: .7rem;
-            border-top: .3rem solid var(--primary-theme-color);
-            transform: rotateZ(0deg);
-            transform-origin: left top;
-        }
-        &::after {
-            bottom: -250%;
-            left: 0%;
-            height: .7rem;
-            border-bottom: .3rem solid var(--primary-theme-color);
-            transform: rotateZ(0deg);
-            transform-origin: left bottom;
-        }
-    }
-
-    .toggle-menu_checkbox-btn {
-        display: none;
-
-        & ~ label {
-            transition: all 0.2s var(--animation-curve);
-        }
-
-        &:checked ~ label {
-            background-color: var(--light-mode-primary-bg-color);
+            cursor: pointer;
 
             &::before,
             &::after {
                 content: "";
-                border: none;
-                height: .3rem;
-                background-color: var(--tertiary-theme-color);
-                left: 10%;
+                width: 3rem;
+                background-color: transparent;
+                position: absolute;
+                display: block;
+                color: var(--tertiary-theme-color);
+                transition: all 0.2s var(--animation-curve);
             }
-
             &::before {
-                transform: rotateZ(41deg);
+                top: -250%;
+                left: 0%;
+                height: .7rem;
+                border-top: .3rem solid var(--primary-theme-color);
+                transform: rotateZ(0deg);
+                transform-origin: left top;
             }
-
             &::after {
-                transform: rotateZ(-41deg);
+                bottom: -250%;
+                left: 0%;
+                height: .7rem;
+                border-bottom: .3rem solid var(--primary-theme-color);
+                transform: rotateZ(0deg);
+                transform-origin: left bottom;
             }
         }
     }
@@ -176,7 +248,7 @@
             display: none;
 
             &:checked + .toggle-theme_slider {
-                background-color: var(--dark-mode-primary-bg-color);
+                background-color: #31363e;
             }
 
             &:checked + .toggle-theme_slider::before {
@@ -339,9 +411,10 @@
         .task-creation-form {
             position: fixed;
             left: 50%;
-            height: 93%;
+            min-height: 48rem;
+            height: 96%;
             width: 93%;
-            transform: translate(-50%, 0%);
+            transform: translate(-50%, -1.7%);
             z-index: 5;
             flex-direction: column;
             background-color: var(--light-mode-secondary-bg-color);
@@ -391,6 +464,7 @@
                     text-align: left;
                     color: var(--primary-theme-color);
                     padding: 1rem 0 .3rem;
+                    font-weight: 500;
                 }
 
                 & label {
@@ -474,20 +548,26 @@
 
         .task-update-form {
             left: 50%;
+            min-height: 50.3rem;
+            height: 97%;
             width: 93%;
-            transform: translate(-50%, -1.5%);
+            transform: translate(-50%, -3%);
         }
     }
 
     /* TASKS AREA SUBSECTION */
     .tasks-area-subsection {
+        position: absolute;
         flex-direction: column;
         align-items: center;
-        padding: 2.3rem 3.7rem;
+        padding: 0 3.7rem;
         height: calc(100vh - 12.1rem);
-        margin-left: auto;
         min-width: 26rem;
         width: calc(100% - 37.5rem);
+
+        &.swipe-right {
+            right: 0;
+        }
         
         &.centering {
             margin: 0 auto;
@@ -586,9 +666,11 @@
 
         .area {
             flex-direction: column;
+            min-width: 35rem;
             width: 100%;
             max-height: 100%;
             row-gap: 1.5rem;
+            padding: 1rem 0;
         }
 
         .tasks-inbox.area header {
@@ -614,9 +696,9 @@
         }
 
         .priority-matrix.area {
+            max-height: none;
             width: 100%;
             display: grid;
-            grid-template-rows: 1fr 1fr 1fr;
             gap: 1rem;
             place-items: center;
             margin: auto;
@@ -628,6 +710,13 @@
 
                 & .box {
                     box-shadow: 0 0 3.7rem .3rem var(--light-mode-box-shadow-color);
+
+                    .list {
+                        height: 9rem;
+                        flex-direction: column;
+                        row-gap: .5rem;
+                        padding: .3rem 0 .5rem;
+                    }
                 }
     
                 &.high-priority-tasks {
@@ -639,8 +728,6 @@
                     width: inherit;
                     justify-content: space-between;
                     gap: 1rem;
-                    background: transparent url('data:image/svg+xml,<svg width="64" height="64" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.576 1.424a.6.6 0 0 1 .848 0l10.152 10.152a.6.6 0 0 1 0 .848L12.424 22.576a.6.6 0 0 1-.848 0L1.424 12.424a.6.6 0 0 1 0-.848L11.576 1.424ZM6 12h4m4 0h4"/></svg>') no-repeat center;
-                    background-size: 12rem;
     
                     .box {
                         width: 35rem;
@@ -666,13 +753,7 @@
                         font-weight: 500;
                     }
                 }
-    
-                .list {
-                    height: 9rem;
-                    flex-direction: column;
-                    row-gap: .5rem;
-                    padding: .3rem 0 .5rem;
-                }
+
             }
         }
     }
@@ -683,7 +764,7 @@
         max-height: 37rem;
         width: 28rem;
         position: fixed;
-        transform: translate(10%, 10%);
+        transform: translate(10%, 20%);
         flex-direction: column;
         row-gap: 1rem;
         border-radius: .5rem;
@@ -912,6 +993,7 @@
 
                 .fa-edit {
                     color: var(--secondary-theme-color);
+                    filter: contrast(1.2);
                 }
                 
                 .fa-trash {
@@ -940,8 +1022,8 @@
         z-index: 7;
         position: fixed;
         background-color: var(--light-mode-secondary-bg-color);
-        transform: translate(-10%, -5%);
-        min-height: 46rem;
+        transform: translate(-10%, 0%);
+        height: 50.5rem;
         width: 35rem;
         row-gap: 1.5rem;
         padding: .5rem 1rem;

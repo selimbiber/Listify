@@ -28,12 +28,14 @@ export function toggleSidebarMenu() {
     TOGGLE_MENU_CHECKBOX_BTN.addEventListener('click', () => {
         if ( SIDEBAR_MENU.classList.contains('open') ) {
             SIDEBAR_MENU.classList.remove('open');
+            TASKS_AREA.classList.remove('swipe-right');
             TASKS_AREA.classList.add('centering');
             document.querySelector('.sidebar-slider').title = 'click for open the sidebar menu';
             checkEmptyTasksArea();
         } else {
             SIDEBAR_MENU.classList.add('open');
             TASKS_AREA.classList.remove('centering');
+            TASKS_AREA.classList.add('swipe-right');
             document.querySelector('.sidebar-slider').title = 'click for close the sidebar menu';
         }
     });

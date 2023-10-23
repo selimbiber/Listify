@@ -25,6 +25,7 @@ export default function filterTasksBySelectedOption(selectedOptionValue) {
                                     repetitiveTaskItem.details,
                                     repetitiveTaskItem.deadline,
                                     repetitiveTaskItem.priority,
+                                    repetitiveTaskItem.status,
                                     'Wide Area'
                                 )
                             );
@@ -43,6 +44,7 @@ export default function filterTasksBySelectedOption(selectedOptionValue) {
                                     repetitiveTaskItem.details,
                                     repetitiveTaskItem.deadline,
                                     repetitiveTaskItem.priority,
+                                    repetitiveTaskItem.status,
                                     'Wide Area'
                                 )
                             );
@@ -63,6 +65,7 @@ export default function filterTasksBySelectedOption(selectedOptionValue) {
                                 taskItem.details,
                                 taskItem.deadline,
                                 taskItem.priority,
+                                taskItem.status,
                                 'Wide Area'
                             )
                         );
@@ -81,6 +84,7 @@ export default function filterTasksBySelectedOption(selectedOptionValue) {
                                 taskItem.details,
                                 taskItem.deadline,
                                 taskItem.priority,
+                                taskItem.status,
                                 'Wide Area'
                             )
                         );
@@ -103,6 +107,7 @@ export default function filterTasksBySelectedOption(selectedOptionValue) {
                                     customTaskItem.details,
                                     customTaskItem.deadline,
                                     customTaskItem.priority,
+                                    customTaskItem.status,
                                     'Wide Area'
                                 )
                             );
@@ -122,6 +127,7 @@ export default function filterTasksBySelectedOption(selectedOptionValue) {
                                     customTaskItem.details,
                                     customTaskItem.deadline,
                                     customTaskItem.priority,
+                                    customTaskItem.status,
                                     'Wide Area'
                                 )
                             );
@@ -138,6 +144,7 @@ export default function filterTasksBySelectedOption(selectedOptionValue) {
                         taskItem.details,
                         taskItem.deadline,
                         taskItem.priority,
+                        taskItem.status,
                         'Wide Area'
                     )
                 );
