@@ -98,4 +98,25 @@ Thanks for checking out my front-end coding project.
 
 ## Preview Images for Demo
 
+### Light Mode Design
+
+![opening-screen_light-mode](https://github.com/selimbiber/Listify/assets/117529414/fdcec4c2-5983-4dd8-8397-9be5058b1565)
+![task-creation-form_light-mode](https://github.com/selimbiber/Listify/assets/117529414/f7c72a94-ceb5-46f1-a3e8-a3c830858543)
+![task-create-warning_light-mode](https://github.com/selimbiber/Listify/assets/117529414/cefdc9a3-13f8-443f-91bf-8040a451badb)
+![preview-img_light-theme](https://github.com/selimbiber/Listify/assets/117529414/122246dc-560b-4ab7-b2b2-ae4e91ddf112)
+![info-card_light-mode](https://github.com/selimbiber/Listify/assets/117529414/c5319b57-43fe-4b67-a809-18df8839b2fc)
+![info-card-2_light-mode](https://github.com/selimbiber/Listify/assets/117529414/dbf77a64-d80b-424d-905d-b9490b1489e5)
+![task-updating-form_light-mode](https://github.com/selimbiber/Listify/assets/117529414/7dcf84ac-9e46-49f1-b6ba-d608d21cf7e2)
+![updating-tasks-inbox_light-mode](https://github.com/selimbiber/Listify/assets/117529414/6f6a03ec-49be-4a49-b933-fccf423b67ba)
+![task-delete-warning_light-mode](https://github.com/selimbiber/Listify/assets/117529414/af629e72-2cd9-4144-bb63-03662d453aa4)
+![custom-tasks-area_light-mode](https://github.com/selimbiber/Listify/assets/117529414/30c74ba1-daea-494e-a41d-48f786733ca4)
+![repetitive-tasks-area_light-mode](https://github.com/selimbiber/Listify/assets/117529414/ecccb45e-e3f0-46d2-ba0f-e1ce51c3c492)
+![empty-tasks-warning_light-mode](https://github.com/selimbiber/Listify/assets/117529414/e3089afa-60df-4224-8ca7-46ffe54488a3)
+![priority-matrix-area_light-mode](https://github.com/selimbiber/Listify/assets/117529414/3180f3cb-2092-42dd-bf03-382c960e27ea)
+
+### Dark Mode Design
+
+![preview-img_dark-mode](https://github.com/selimbiber/Listify/assets/117529414/6a2d5da8-8920-4421-b1ae-2ad1501dd48c)
+![priority-matrix-area_dark-mode](https://github.com/selimbiber/Listify/assets/117529414/e9364d4d-c6b9-436a-b9a3-7a211e98b0e9)
+
 ## [Preview Link of Demo](https://htmlpreview.github.io/?https://github.com/selimbiber/Listify/blob/main/dist/index.html)
