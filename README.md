@@ -112,11 +112,12 @@ Thanks for checking out my front-end coding project.
 ![custom-tasks-area_light-mode](https://github.com/selimbiber/Listify/assets/117529414/30c74ba1-daea-494e-a41d-48f786733ca4)
 ![repetitive-tasks-area_light-mode](https://github.com/selimbiber/Listify/assets/117529414/ecccb45e-e3f0-46d2-ba0f-e1ce51c3c492)
 ![empty-tasks-warning_light-mode](https://github.com/selimbiber/Listify/assets/117529414/e3089afa-60df-4224-8ca7-46ffe54488a3)
-![priority-matrix-area_light-mode](https://github.com/selimbiber/Listify/assets/117529414/3180f3cb-2092-42dd-bf03-382c960e27ea)
+![priority-matrix-area_light-mode](https://github.com/selimbiber/Listify/assets/117529414/057d6cad-6fd8-473f-8412-43978325c98d)
+![priority-matrix-area-wide_light-mode](https://github.com/selimbiber/Listify/assets/117529414/cfaa246a-c7ae-4b28-97a2-39c967648888)
 
 ### Dark Mode Design
 
 ![preview-img_dark-mode](https://github.com/selimbiber/Listify/assets/117529414/6a2d5da8-8920-4421-b1ae-2ad1501dd48c)
-![priority-matrix-area_dark-mode](https://github.com/selimbiber/Listify/assets/117529414/e9364d4d-c6b9-436a-b9a3-7a211e98b0e9)
+![priority-matrix-area_dark-mode](https://github.com/selimbiber/Listify/assets/117529414/0d20fc1c-eb97-421e-8351-c37d64fc86db)
 
 ## [Preview Link of Demo](https://htmlpreview.github.io/?https://github.com/selimbiber/Listify/blob/main/dist/index.html)
