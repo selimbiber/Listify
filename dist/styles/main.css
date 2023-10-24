@@ -1141,31 +1141,31 @@
             }
         }
 
-        footer {
+        & footer {
             column-gap: 1rem;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            place-items: center;
-
-            button {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+    
+            & button {
                 height: 3.7rem;
                 width: 100%;
                 transition: opacity .3s;
                 color: var(--light-mode-primary-bg-color);
-
+    
                 &:hover {
                     opacity: .5;
                 }
-            }
-
-            .confirm-update-btn {
-                margin: 1rem auto;
-                border: 0;
-                background-color: var(--primary-theme-color);
-            }
-
-            .cancel-update-btn {
-                background-color: var(--tertiary-theme-color);
+    
+                &.confirm-update-btn {
+                    margin: 1rem auto;
+                    border: 0;
+                    background-color: var(--primary-theme-color);
+                }
+        
+                &.cancel-update-btn {
+                    background-color: var(--tertiary-theme-color);
+                }
             }
         }
     }
