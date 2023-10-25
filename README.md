@@ -24,7 +24,9 @@ Thanks for checking out my front-end coding project.
     - [Mobile-first workflow](#mobile-first-workflow)
     - [Pure JavaScript](#pure-javascript)
     - [Javascript Module Pattern](#javascript-module-pattern)
+    - [Local Storage](#local-storage)
     - [Webpack](#webpack)
+    - [JSON](#json)
   - [Author Links:](#author-links)
     - [Website](#website)
     - [LinkedIn](#linkedin)
@@ -51,31 +53,31 @@ Thanks for checking out my front-end coding project.
 ### Features planned to be developed in pro version of the project:
 
 #### Development Main Objectives
-- [] Code repetitions will be reduced.
-- [] User interface will be revamped according to the original.
-- [] While developing the Pro version of the application, JavaScript's React, Vue and Node libraries will be learned first, React Native for the mobile platform and Electron libraries for the desktop platform.
-- [] Backend side of the application will be developed. (Sign in and sign up forms will be added)
+- [ ] Code repetitions will be reduced.
+- [ ] User interface will be revamped according to the original.
+- [ ] While developing the Pro version of the application, JavaScript's React, Vue and Node libraries will be learned first, React Native for the mobile platform and Electron libraries for the desktop platform.
+- [ ] Backend side of the application will be developed. (Sign in and sign up forms will be added)
 
 #### List Items Feautures (for task creation and updating forms):
-- [] Identify Type (Main Options: Topic Oriented, Project Based, Time Limited)
-- [] Set Agent (Assign the task to someone saved in your contacts)
-- [] Take Note (Will be developed as much as possible)
-- [] Assign tags (Sport, Chore etc.)
-- [] Determine Reward (Gaming, Cinema etc.)
-- [] Reminder Off/On (Browser notification)
+- [ ] Identify Type (Main Options: Topic Oriented, Project Based, Time Limited)
+- [ ] Set Agent (Assign the task to someone saved in your contacts)
+- [ ] Take Note (Will be developed as much as possible)
+- [ ] Assign tags (Sport, Chore etc.)
+- [ ] Determine Reward (Gaming, Cinema etc.)
+- [ ] Reminder Off/On (Browser notification)
 
 #### User Profile Feautures
-- [] Look Agenda (daily tasks etc.)
-- [] Show Earned Rewards
-- [] Change Color Theme Preference: 6 different color theme options will be developed with their own light and dark mode preferences. (Primary (Default), Army, Navy, Cosy, Pinky, Smoky)
+- [ ] Look Agenda (daily tasks etc.)
+- [ ] Show Earned Rewards
+- [ ] Change Color Theme Preference: 6 different color theme options will be developed with their own light and dark mode preferences. (Primary (Default), Army, Navy, Cosy, Pinky, Smoky)
 
 #### Project Profile Features
-- [] Profile Image and Background Image can be added for the projects.
-- [] Tasks related to the projects will be listed one under the other.
+- [ ] Profile Image and Background Image can be added for the projects.
+- [ ] Tasks related to the projects will be listed one under the other.
 
 #### Other Planned Feautures
-- [] Search tasks for connected with this (Name (Projects, Topics, Tags, Agents), Time (Repeating Frequency, Remaining Day) etc.)
-- [] Buttons to download and forward the task will be activated.
+- [ ] Search tasks for connected with this (Name (Projects, Topics, Tags, Agents), Time (Repeating Frequency, Remaining Day) etc.)
+- [ ] Buttons to download and forward the task will be activated.
 
 ## Builted with:
 
@@ -86,7 +88,9 @@ Thanks for checking out my front-end coding project.
 ### Mobile-first workflow
 ### Pure JavaScript
 ### Javascript Module Pattern
+### Local Storage
 ### Webpack
+### JSON
 
 ## Author Links:
 
