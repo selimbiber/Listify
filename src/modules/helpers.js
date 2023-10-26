@@ -154,17 +154,9 @@ export function toggleBetweenTaskAreas() {
 }
 
 export function checkEmptyTasksArea() {
-    window.addEventListener('DOMContentLoaded', () => {
-        if ( !document.querySelector('.tasks-list-item') ) {
+    if ( document.querySelector('.inbox.task-count').textContent == 0) {
             showEmptyTasksAreaMessageBox();
-        }
-    });
-
-    if (document.readyState === "complete" || document.readyState === "loaded") {
-        if ( !document.querySelector('.tasks-list-item') ) {
-            showEmptyTasksAreaMessageBox();
-        }
-   }
+    }
 
     function showEmptyTasksAreaMessageBox() {
         if ( document.querySelector('.sidebar-menu-subsection').classList.contains('open') ) {
