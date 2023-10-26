@@ -5,7 +5,6 @@ import {
     toggleSidebarMenu, 
     toggleThemeMode, 
     toggleBetweenTaskAreas,
-    checkEmptyTasksArea, 
     changeZeroTaskCountColor
 } from "./modules/helpers";
 
@@ -14,8 +13,6 @@ toggleSidebarMenu();
 toggleThemeMode();
 
 toggleBetweenTaskAreas();
-
-checkEmptyTasksArea();
 
 changeZeroTaskCountColor();
 

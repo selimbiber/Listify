@@ -1,5 +1,5 @@
 import { ALL_TASKS, CUSTOM_TASKS, REPETITIVE_TASKS, TASK_CODES, createTaskListItem, createMatrixAreaListITem } from "./content";
-import { updateCurrentTasksCount } from "./helpers";
+import { updateCurrentTasksCount, checkEmptyTasksArea } from "./helpers";
 
 export function updateLocalStorageForTaskData(newTaskObject, newTaskCategory) {
     ALL_TASKS.push(newTaskObject);
@@ -137,4 +137,5 @@ export function loadUserDataFromLocalStorage() {
             }
         updateCurrentTasksCount();
     }
+    checkEmptyTasksArea();
 }

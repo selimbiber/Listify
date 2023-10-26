@@ -154,8 +154,8 @@ export function toggleBetweenTaskAreas() {
 }
 
 export function checkEmptyTasksArea() {
-    if ( document.querySelector('.inbox.task-count').textContent == 0) {
-            showEmptyTasksAreaMessageBox();
+    if (document.querySelector('.inbox.task-count').textContent == 0) {
+        showEmptyTasksAreaMessageBox();
     }
 
     function showEmptyTasksAreaMessageBox() {
