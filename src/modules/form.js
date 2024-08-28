@@ -9,8 +9,6 @@ import { formatDate, updateCurrentTasksCount } from "./helpers";
 
 function createTaskCreationForm() {
   const TASK_CREATION_FORM = document.createElement("form");
-  TASK_CREATION_FORM.action = "https://httpbin.org/post";
-  TASK_CREATION_FORM.method = "post";
   TASK_CREATION_FORM.id = "task-creation-form";
   TASK_CREATION_FORM.classList.add("task-creation-form", "hide");
   TASK_CREATION_FORM.addEventListener("submit", (f) => f.preventDefault());
@@ -305,9 +303,7 @@ function validateTaskCreationForm() {
   const TASK_CODE = generateTaskCode();
   const TASK_TITLE = document.querySelector("#task_title-input").value;
   const TASK_DETAILS = document.querySelector("#task_details-textarea").value;
-  const TASK_DEADLINE = formatDate(
-    new Date(document.querySelector("#task_date-input").value)
-  );
+  const TASK_DEADLINE = document.querySelector("#task_date-input").value;
 
   let taskCategoryName;
 
@@ -338,6 +334,9 @@ function validateTaskCreationForm() {
 
   const CURRENT_TIME = formatDate(new Date());
   if (TASK_DEADLINE !== "") {
+    const TASK_DEADLINE = formatDate(
+      new Date(document.querySelector("#task_date-input").value)
+    );
     if (TASK_DEADLINE < CURRENT_TIME) {
       document.querySelector("#task_date-input").className = "invalid-date-input";
       isThereInvalidInput = "YES";
@@ -515,8 +514,6 @@ export function createTaskUpdateForm(
 ) {
   /* CURRENT VALUES */
   const TASK_UPDATE_FORM = document.createElement("form");
-  TASK_UPDATE_FORM.action = "https://httpbin.org/post";
-  TASK_UPDATE_FORM.method = "post";
   TASK_UPDATE_FORM.id = "task-update-form";
   TASK_UPDATE_FORM.className = "task-update-form";
   TASK_UPDATE_FORM.addEventListener("submit", (f) => f.preventDefault());
@@ -817,9 +814,13 @@ function validateTaskUpdateForm(updatedTaskCode) {
     updatedTaskCategory = "Repetitive Tasks";
   }
 
-  const CURRENT_TIME = new Date().toLocaleDateString().split(".").reverse().join("-");
+  const CURRENT_TIME = new Date();
+  // .toLocaleDateString().split(".").reverse().join("-");
 
   if (TASK_DEADLINE != "") {
+    const TASK_DEADLINE = formatDate(
+      new Date(document.querySelector("#task-deadline-input").value)
+    );
     if (TASK_DEADLINE < CURRENT_TIME) {
       document.querySelector("#task-deadline-input").className = "invalid-date-input";
       isThereInvalidInput = "YES";

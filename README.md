@@ -1,4 +1,4 @@
-# Listify (Demo Version)
+# Listify
 
 A Simple To-Do List Application For 'The Odin Project' Curriculum.
 
@@ -8,7 +8,7 @@ Thanks for checking out my front-end coding project.
 
 ## Table of contents
 
-- [Listify (Demo Version)](#listify-demo-version)
+- [Listify](#listify)
   - [Welcome! 👋](#welcome-)
   - [Table of contents](#table-of-contents)
   - [Development Description](#development-description)

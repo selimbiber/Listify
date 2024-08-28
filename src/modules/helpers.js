@@ -253,19 +253,15 @@ export function calcRemainingTimeForCustomTasks(deadline) {
 
   const YEAR = parseInt(SPLIT_DEADLINE[0]);
   const MONTH = parseInt(SPLIT_DEADLINE[1]) - 1;
-  const DAY = parseInt(SPLIT_DEADLINE[2]) + 1;
+  const DAY = parseInt(SPLIT_DEADLINE[2]);
 
   const TASK_DEADLINE = new Date(YEAR, MONTH, DAY);
   const TIME_DIFFERENCE = TASK_DEADLINE - CURRENT_TIME;
-  const DAY_DIFFERENCE = TIME_DIFFERENCE / (1000 * 60 * 60 * 24);
+  const DAY_DIFFERENCE = Math.ceil(TIME_DIFFERENCE / (1000 * 60 * 60 * 24));
 
-  if (DAY_DIFFERENCE.toFixed(0) == 0) {
-    return `today`;
-  } else if (DAY_DIFFERENCE.toFixed(0) == 1) {
-    return `tomorrow`;
-  } else {
-    return `${DAY_DIFFERENCE.toFixed(0)} days`;
-  }
+  if (DAY_DIFFERENCE === 0) return `today`;
+  if (DAY_DIFFERENCE === 1) return `tomorrow`;
+  return `${DAY_DIFFERENCE} days`;
 }
 
 export function markTaskListItemDone(
