@@ -111,4 +111,4 @@ I will use the demo version of the application regularly myself and try to disco
 ![preview-img_dark-mode](https://github.com/selimbiber/Listify/assets/117529414/6a2d5da8-8920-4421-b1ae-2ad1501dd48c)
 ![priority-matrix-area_dark-mode](https://github.com/selimbiber/Listify/assets/117529414/0d20fc1c-eb97-421e-8351-c37d64fc86db)
 
-## [Preview Link of Demo](https://htmlpreview.github.io/?https://github.com/selimbiber/Listify/blob/main/dist/index.html)
+## [Live Preview Link](https://selimbiber.github.io/Listify/dist/)
